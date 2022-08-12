@@ -1,0 +1,25 @@
+package Lambdas;
+
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
+
+
+public class Desafio {
+
+	public static void main(String[] args) {
+
+		
+		Function<Produto, Double> precoFinal = v -> v * (1- produto.desconto); 
+		UnaryOperator<Double> imposto = i -> i >= 2500 ? ( i / (1-0.085)) : i * 0;
+		UnaryOperator<Double> frete = f -> f >= 3000 ? f + 100 : f + 50;
+		
+		Produto p = new Produto("iPad", 3235.89, 0.13);
+		double resultadoFinal = desconto.andThen(imposto).andThen(frete).apply(3235.89, 0.13);
+				
+		System.out.printf("R$%.2f", resultadoFinal);
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package streams;
+
+public class CarroFilter {
+
+	final String marca;
+	final int velocidadeMax;
+	 
+	 public CarroFilter(String marca, int velocidadeMax) {
+		 this.marca = marca;
+		 this.velocidadeMax = velocidadeMax;
+	 }
+	
+	
+}

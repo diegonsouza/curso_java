@@ -1,0 +1,13 @@
+package streams;
+
+public class DesafioFilter {
+
+	public static void main(String[] args) {
+
+		CarroFilter car1 = new CarroFilter("Celta", 156);
+		CarroFilter car2 = new CarroFilter("Civi", 195);
+		CarroFilter car3 = new CarroFilter("Ferrari", 340);
+		
+	}
+
+}

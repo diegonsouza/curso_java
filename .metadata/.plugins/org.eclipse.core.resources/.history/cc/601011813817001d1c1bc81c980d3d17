@@ -1,0 +1,10 @@
+package Lambdas;
+
+public class Threds {
+
+	public static void main(String[] args) {
+		
+		Runnable trabalho1 = new Trabalho1();
+		
+	}
+}

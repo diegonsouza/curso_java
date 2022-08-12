@@ -1,0 +1,8 @@
+package streams;
+
+public class Media {
+
+	private double total;
+	private int quantidade;
+	
+}

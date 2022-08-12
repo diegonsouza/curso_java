@@ -1,0 +1,25 @@
+package streams;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class DesafioFilter {
+
+	public static void main(String[] args) {
+
+		CarroFilter car1 = new CarroFilter("Celta", 156);
+		CarroFilter car2 = new CarroFilter("Civi", 195);
+		CarroFilter car3 = new CarroFilter("Ferrari", 340);
+		
+		List<CarroFilter> carros = new ArrayList<>();
+					
+		Predicate<CarroFilter> velocidade = v -> v.velocidadeMax > 250;
+		Function<CarroFilter, String> esportivo = e -> "O veiculo " + e.marca + " e esportivo!";
+		
+		carros.stream().filter(velocidade).map(esportivo).forEach(System.out::println);
+	}
+
+} 

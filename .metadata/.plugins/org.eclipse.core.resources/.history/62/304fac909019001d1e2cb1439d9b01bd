@@ -1,0 +1,20 @@
+package streams;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class Site {
+
+	public static void main(String[] args) {
+		
+		Produtos item1 = new Produtos("Caderno", 15.50, 0.30);
+		Produtos item2 = new Produtos("Caneta", 3.69, 0.30);
+		Produtos item3 = new Produtos("Borracha", 2.80, 0.15);
+		
+		List<Produtos> materias = Arrays.asList(item1,item2,item3);
+		
+		Predicate<Produtos> desconto = d -> d.desconto >= 0.30; 
+		
+	}
+}
